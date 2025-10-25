@@ -26,7 +26,7 @@ const BoardColumn = ({ column, index, moveColumn, moveTask }) => {
     try {
       const position = tasks.length;
       const created = await createTask({
-        listId: column.listId,
+        listId: column.id,
         title: newTaskTitle,
         position
       });

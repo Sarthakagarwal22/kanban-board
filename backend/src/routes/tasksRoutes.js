@@ -9,11 +9,11 @@ import {
 const router = express.Router();
 
 // Get all tasks in a list (listId from body)
-router.post('/v1/getAll', async (req, res) => {
+router.get('/v1/getAll/:listId', async (req, res) => {
   try {
-    const { listId } = req.body;
+    const { listId } = req.params;
     if (!listId) {
-      return res.status(400).json({ error: 'listId is required in body' });
+      return res.status(400).json({ error: 'listId is required in params' });
     }
     const tasks = await getTasks(listId);
     res.status(200).json(tasks);
