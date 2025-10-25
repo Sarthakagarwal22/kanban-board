@@ -1,0 +1,30 @@
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+
+.app-container {
+  display: flex;
+  height: 100vh;
+  background: #20212c;
+  color: #fff;
+}
+
+/* Responsive for app container only */
+@media (max-width: 600px) {
+  .app-container {
+    flex-direction: column;
+  }
+}

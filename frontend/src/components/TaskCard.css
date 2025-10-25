@@ -1,0 +1,17 @@
+.task-card {
+  background: #2b2c4b;
+  border-radius: 8px;
+  padding: 1rem;
+  color: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  margin-bottom: 0.5rem;
+}
+.task-title {
+  font-weight: bold;
+  font-size: 1rem;
+}
+.task-subtasks {
+  color: #aaa;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
